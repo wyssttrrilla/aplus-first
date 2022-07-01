@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Visual="Default"
+             x:Class="AplusXamarinApp.Page.SelectPeojectPage"
+             Title="
+           Проекты">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="plus.png" Priority="0" Order="Primary" x:Name="AddProject" Clicked="AddProject_Clicked"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView x:Name="LWSelectPeoject" 
+                      ItemsSource="{Binding LVProjectsName}" 
+                      ItemSelected="LWSelectPeoject_ItemSelected"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+    
